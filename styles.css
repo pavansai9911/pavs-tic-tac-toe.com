@@ -1,0 +1,69 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #8e44ad; /* Changed to purple */
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #fff; /* Text color changed to white */
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    background-color: #fff; /* Keep the background color white */
+}
+
+.cell:hover {
+    background-color: #e0e0e0;
+}
+
+/* Different colors for X and O */
+.cell.x {
+    color: #3498db; /* Blue color for X */
+}
+
+.cell.o {
+    color: #e74c3c; /* Red color for O */
+}
+
+.reset-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.reset-btn:hover {
+    background-color: #2980b9;
+}
+
+.score-card {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #fff; /* Text color changed to white */
+}
