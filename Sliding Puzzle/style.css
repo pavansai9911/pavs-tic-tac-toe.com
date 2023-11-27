@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: lightblue; /* Set background color to light blue */
+}
+
+.game-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: black; /* Set text color to black */
+    margin: 20px 0; /* Add margin for spacing */
+}
+
+.puzzle-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.puzzle-piece {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold; /* Make the integers more bold */
+    background-color: #ddd;
+    background-image: url('bg1.png');
+    background-size: cover;
+    cursor: pointer;
+    border: 2px solid black; /* Add black border to puzzle pieces */
+}
+
+.reset-button {
+    margin-top: 10px; /* Add margin for spacing */
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
